@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Link from "next/link";
 import SectionLabel from "@/components/ui/SectionLabel";
 import PriceTable from "@/components/ui/PriceTable";
@@ -24,7 +24,7 @@ export default function CenikPage() {
       {/* Page hero */}
       <section className="bg-cream py-20">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="w-10 border-t border-gold mb-4" />
+          <div className="w-10 border-t border-violet mb-4" />
           <SectionLabel text="Přehled cen" />
           <h1 className="font-heading text-[clamp(36px,4vw,54px)] text-dark">Ceník služeb</h1>
           <p className="font-body text-[15px] text-gray mt-3">
@@ -41,7 +41,7 @@ export default function CenikPage() {
               <a
                 key={tab.key}
                 href={`#${tab.key}`}
-                className="font-body text-[12px] uppercase tracking-[0.08em] whitespace-nowrap px-5 py-4 text-gray hover:text-gold transition-colors border-b-2 border-transparent hover:border-gold"
+                className="font-body text-[12px] uppercase tracking-[0.08em] whitespace-nowrap px-5 py-4 text-gray hover:text-violet transition-colors border-b-2 border-transparent hover:border-violet"
               >
                 {tab.label}
               </a>
@@ -56,7 +56,7 @@ export default function CenikPage() {
           const section = pricing[tab.key];
           return (
             <div key={tab.key} id={tab.key} className="scroll-mt-32">
-              <div className="w-10 border-t border-gold mb-4" />
+              <div className="w-10 border-t border-violet mb-4" />
               <SectionLabel text={section.label} />
               <h2 className="font-body font-medium text-[clamp(22px,2.5vw,32px)] text-dark mb-8">
                 {section.label}
@@ -75,13 +75,13 @@ export default function CenikPage() {
           </p>
           <p className="font-body text-[14px] text-gray mb-8">
             Na objednávku volejte:{" "}
-            <a href="tel:736401118" className="text-gold hover:underline">
+            <a href="tel:736401118" className="text-violet hover:underline">
               736 401 118
             </a>
           </p>
           <Link
             href="/kontakt"
-            className="inline-block font-body text-[12px] uppercase tracking-[0.1em] bg-gold text-white border border-gold px-9 py-3.5 hover:bg-[#B8935A] transition-all duration-200"
+            className="inline-block font-body text-[12px] uppercase tracking-[0.1em] bg-violet text-white border border-violet px-9 py-3.5 hover:bg-[#7A6A97] transition-all duration-200"
           >
             Objednat se
           </Link>
@@ -90,3 +90,4 @@ export default function CenikPage() {
     </>
   );
 }
+

@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import SectionLabel from "@/components/ui/SectionLabel";
 import Button from "@/components/ui/Button";
 
@@ -63,7 +63,7 @@ export default function SluzbyPage() {
       {/* Page hero */}
       <section className="bg-cream py-20">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="w-10 border-t border-gold mb-4" />
+          <div className="w-10 border-t border-violet mb-4" />
           <SectionLabel text="Přehled služeb" />
           <h1 className="font-heading text-[clamp(36px,4vw,54px)] text-dark">Naše služby</h1>
           <p className="font-body text-[15px] text-gray mt-3">Komplexní péče o ruce, nohy a pleť</p>
@@ -90,7 +90,7 @@ export default function SluzbyPage() {
 
             {/* Text */}
             <div className={i % 2 !== 0 ? "lg:order-1" : ""}>
-              <div className="w-10 border-t border-gold mb-4" />
+              <div className="w-10 border-t border-violet mb-4" />
               <SectionLabel text={s.label} />
               <h2 className="font-body font-medium text-[clamp(24px,2.5vw,34px)] text-dark leading-tight mb-5">
                 {s.heading}
@@ -98,7 +98,7 @@ export default function SluzbyPage() {
               <p className="font-body text-[15px] text-gray leading-[1.75] mb-6">{s.desc}</p>
 
               {s.highlight && (
-                <div className="bg-gold/10 border-l-2 border-gold px-5 py-4 mb-6">
+                <div className="bg-violet/10 border-l-2 border-violet px-5 py-4 mb-6">
                   <p className="font-body text-[14px] text-dark">{s.highlight}</p>
                 </div>
               )}
@@ -106,7 +106,7 @@ export default function SluzbyPage() {
               <ul className="space-y-2 mb-8">
                 {s.items.map((item) => (
                   <li key={item} className="flex items-center gap-2 font-body text-[14px] text-dark">
-                    <span className="w-1 h-1 rounded-full bg-gold shrink-0" />
+                    <span className="w-1 h-1 rounded-full bg-violet shrink-0" />
                     {item}
                   </li>
                 ))}
@@ -126,7 +126,7 @@ export default function SluzbyPage() {
       ))}
 
       {/* CTA */}
-      <section className="bg-gold py-16">
+      <section className="bg-violet py-16">
         <div className="max-w-7xl mx-auto px-6 text-center text-white">
           <h2 className="font-body font-medium text-[28px] mb-4">Máte zájem?</h2>
           <p className="font-body text-[15px] text-white/80 mb-8">
@@ -138,3 +138,4 @@ export default function SluzbyPage() {
     </>
   );
 }
+

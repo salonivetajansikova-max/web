@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import {
@@ -95,16 +95,16 @@ export default function HomePage() {
         {/* Spodní info lišta */}
         <div className="absolute bottom-0 left-0 right-0 z-10 bg-white/95">
           <div className="max-w-7xl mx-auto px-6 py-4 grid grid-cols-1 md:grid-cols-3 gap-4">
-            <a href="tel:736401118" className="flex items-center gap-3 font-body text-[14px] text-dark hover:text-gold transition-colors justify-center md:justify-start">
-              <Phone size={16} strokeWidth={1} className="text-gold" />
+            <a href="tel:736401118" className="flex items-center gap-3 font-body text-[14px] text-dark hover:text-violet transition-colors justify-center md:justify-start">
+              <Phone size={16} strokeWidth={1} className="text-violet" />
               736 401 118
             </a>
-            <a href="mailto:iveta.jansikova@seznam.cz" className="flex items-center gap-3 font-body text-[14px] text-dark hover:text-gold transition-colors justify-center">
-              <Mail size={16} strokeWidth={1} className="text-gold" />
+            <a href="mailto:iveta.jansikova@seznam.cz" className="flex items-center gap-3 font-body text-[14px] text-dark hover:text-violet transition-colors justify-center">
+              <Mail size={16} strokeWidth={1} className="text-violet" />
               iveta.jansikova@seznam.cz
             </a>
             <div className="flex items-center gap-3 font-body text-[14px] text-dark justify-center md:justify-end">
-              <MapPin size={16} strokeWidth={1} className="text-gold" />
+              <MapPin size={16} strokeWidth={1} className="text-violet" />
               Revoluční 49, Světlá n. S.
             </div>
           </div>
@@ -142,7 +142,7 @@ export default function HomePage() {
                 "Své zkušenosti předávám dál jako lektorka pedikúry v Royal Academy v Jihlavě",
               ].map((item) => (
                 <li key={item} className="flex items-center gap-3 font-body text-[15px] text-dark">
-                  <Check size={16} strokeWidth={1.5} className="text-gold shrink-0" />
+                  <Check size={16} strokeWidth={1.5} className="text-violet shrink-0" />
                   {item}
                 </li>
               ))}
@@ -156,7 +156,7 @@ export default function HomePage() {
       <section className="bg-white py-24">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-14">
-            <div className="w-10 border-t border-gold mx-auto mb-4" />
+            <div className="w-10 border-t border-violet mx-auto mb-4" />
             <SectionLabel text="Naše služby" />
             <h2 className="font-body font-medium text-[clamp(28px,3vw,40px)] text-dark">
               Komplexní péče o krásu
@@ -176,7 +176,7 @@ export default function HomePage() {
       </section>
 
       {/* KONTAKTNÍ LIŠTA */}
-      <section className="bg-gold py-14">
+      <section className="bg-violet py-14">
         <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8 text-white text-center">
           <div>
             <Phone size={22} strokeWidth={1} className="mx-auto mb-3" />
@@ -202,3 +202,4 @@ export default function HomePage() {
     </>
   );
 }
+

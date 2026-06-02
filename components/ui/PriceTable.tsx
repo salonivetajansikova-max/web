@@ -20,7 +20,7 @@ export default function PriceTable({ items }: { items: PriceItem[] }) {
             className="border-b border-border hover:bg-cream transition-colors"
           >
             <td className="py-3 px-4 font-body text-[15px] text-dark">{item.name}</td>
-            <td className="py-3 px-4 text-right font-body font-medium text-[15px] text-gold">
+            <td className="py-3 px-4 text-right font-body font-medium text-[15px] text-violet">
               {item.price === "dle výběru" ? (
                 <span className="italic text-gray text-[14px] font-body">{item.price}</span>
               ) : (

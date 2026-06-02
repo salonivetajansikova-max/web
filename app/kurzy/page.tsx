@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Link from "next/link";
 import { ExternalLink, Award, Clock, BookOpen } from "lucide-react";
 import SectionLabel from "@/components/ui/SectionLabel";
@@ -32,7 +32,7 @@ export default function KurzyPage() {
       {/* Page hero */}
       <section className="bg-cream py-20">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="w-10 border-t border-gold mb-4" />
+          <div className="w-10 border-t border-violet mb-4" />
           <SectionLabel text="Výuka & Vzdělávání" />
           <h1 className="font-heading text-[clamp(36px,4vw,54px)] text-dark">Kurzy pedikúry</h1>
           <p className="font-body text-[16px] text-gray mt-4 max-w-xl leading-[1.75]">
@@ -46,7 +46,7 @@ export default function KurzyPage() {
       <section className="bg-white py-24">
         <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
           <div>
-            <div className="w-10 border-t border-gold mb-4" />
+            <div className="w-10 border-t border-violet mb-4" />
             <SectionLabel text="Royal Academy" />
             <h2 className="font-body font-medium text-[clamp(24px,2.5vw,36px)] leading-tight text-dark mb-6">
               Rekvalifikační kurz:<br />
@@ -66,7 +66,7 @@ export default function KurzyPage() {
               href="https://royalacademy.cz/kurz-pedikersky"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 font-body text-[12px] uppercase tracking-[0.1em] bg-gold text-white px-9 py-3.5 hover:opacity-90 transition-opacity duration-200"
+              className="inline-flex items-center gap-2 font-body text-[12px] uppercase tracking-[0.1em] bg-violet text-white px-9 py-3.5 hover:opacity-90 transition-opacity duration-200"
             >
               Více o kurzu na Royal Academy <ExternalLink size={14} strokeWidth={1} />
             </a>
@@ -79,7 +79,7 @@ export default function KurzyPage() {
               { icon: BookOpen, label: "Cena", value: "19 000 Kč" },
             ].map(({ icon: Icon, label, value, sub }) => (
               <div key={label} className="bg-cream border border-border p-6 flex gap-4 items-start">
-                <Icon className="text-gold shrink-0 mt-0.5" size={20} strokeWidth={1.5} />
+                <Icon className="text-violet shrink-0 mt-0.5" size={20} strokeWidth={1.5} />
                 <div>
                   <p className="font-body text-[11px] uppercase tracking-[0.15em] text-gray mb-1">{label}</p>
                   <p className="font-body font-medium text-[16px] text-dark">{value}</p>
@@ -95,7 +95,7 @@ export default function KurzyPage() {
       <section className="bg-cream py-24">
         <div className="max-w-7xl mx-auto px-6">
           <div className="mb-14">
-            <div className="w-10 border-t border-gold mb-4" />
+            <div className="w-10 border-t border-violet mb-4" />
             <SectionLabel text="Specializace" />
             <h2 className="font-body font-medium text-[clamp(24px,2.5vw,36px)] text-dark">Doplňkové kurzy</h2>
           </div>
@@ -104,7 +104,7 @@ export default function KurzyPage() {
               <div key={c.title} className="bg-white border border-border p-8">
                 <h3 className="font-body font-medium text-[17px] text-dark mb-3 pb-4 border-b border-border">{c.title}</h3>
                 <p className="font-body text-[14px] text-gray leading-[1.75] mb-6">{c.desc}</p>
-                <p className="font-body font-medium text-[18px] text-gold">{c.price}</p>
+                <p className="font-body font-medium text-[18px] text-violet">{c.price}</p>
               </div>
             ))}
           </div>
@@ -113,7 +113,7 @@ export default function KurzyPage() {
               href="https://royalacademy.cz/kurz-pedikersky"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 font-body text-[12px] uppercase tracking-[0.1em] border border-gold text-gold px-9 py-3.5 hover:bg-gold hover:text-white transition-all duration-200"
+              className="inline-flex items-center gap-2 font-body text-[12px] uppercase tracking-[0.1em] border border-violet text-violet px-9 py-3.5 hover:bg-violet hover:text-white transition-all duration-200"
             >
               Přejít na Royal Academy <ExternalLink size={14} strokeWidth={1} />
             </a>
@@ -125,7 +125,7 @@ export default function KurzyPage() {
       <section className="bg-dark py-20">
         <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           <div>
-            <div className="w-10 border-t border-gold mb-4" />
+            <div className="w-10 border-t border-violet mb-4" />
             <h2 className="font-body font-medium text-[clamp(24px,2.5vw,36px)] text-white mb-4">Zajímá vás kurz?</h2>
             <p className="font-body text-[15px] text-white/60 leading-[1.75]">
               Pro více informací nebo přihlášení navštivte stránky Royal Academy, nebo mě
@@ -137,7 +137,7 @@ export default function KurzyPage() {
               href="https://royalacademy.cz/kurz-pedikersky"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 font-body text-[12px] uppercase tracking-[0.1em] bg-gold text-white px-9 py-3.5 hover:opacity-90 transition-opacity duration-200"
+              className="inline-flex items-center gap-2 font-body text-[12px] uppercase tracking-[0.1em] bg-violet text-white px-9 py-3.5 hover:opacity-90 transition-opacity duration-200"
             >
               Royal Academy <ExternalLink size={14} strokeWidth={1} />
             </a>
@@ -153,3 +153,4 @@ export default function KurzyPage() {
     </>
   );
 }
+

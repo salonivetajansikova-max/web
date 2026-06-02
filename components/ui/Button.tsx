@@ -22,9 +22,9 @@ export default function Button({
 
   const variants = {
     outline:
-      "border border-gold text-gold hover:bg-gold hover:text-white",
+      "border border-violet text-violet hover:bg-violet hover:text-white",
     solid:
-      "bg-gold text-white border border-gold hover:bg-[#B8935A] hover:border-[#B8935A]",
+      "bg-violet text-white border border-violet hover:bg-[#7A6A97] hover:border-[#7A6A97]",
     "outline-white":
       "border border-white text-white hover:bg-white hover:text-dark",
   };

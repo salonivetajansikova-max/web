@@ -35,7 +35,7 @@ export default function Footer() {
                 <li key={href}>
                   <Link
                     href={href}
-                    className="font-body text-[14px] text-white/60 hover:text-gold transition-colors"
+                    className="font-body text-[14px] text-white/60 hover:text-violet transition-colors"
                   >
                     {label}
                   </Link>
@@ -50,18 +50,18 @@ export default function Footer() {
             </p>
             <ul className="space-y-4">
               <li className="flex items-start gap-3 text-white/60 font-body text-[14px]">
-                <MapPin size={16} className="mt-0.5 shrink-0 text-gold" strokeWidth={1} />
+                <MapPin size={16} className="mt-0.5 shrink-0 text-violet" strokeWidth={1} />
                 Revoluční 49, 582 91 Světlá nad Sázavou
               </li>
               <li className="flex items-center gap-3">
-                <Phone size={16} className="shrink-0 text-gold" strokeWidth={1} />
-                <a href="tel:736401118" className="font-body text-[14px] text-white/60 hover:text-gold transition-colors">
+                <Phone size={16} className="shrink-0 text-violet" strokeWidth={1} />
+                <a href="tel:736401118" className="font-body text-[14px] text-white/60 hover:text-violet transition-colors">
                   736 401 118
                 </a>
               </li>
               <li className="flex items-center gap-3">
-                <Mail size={16} className="shrink-0 text-gold" strokeWidth={1} />
-                <a href="mailto:iveta.jansikova@seznam.cz" className="font-body text-[14px] text-white/60 hover:text-gold transition-colors">
+                <Mail size={16} className="shrink-0 text-violet" strokeWidth={1} />
+                <a href="mailto:iveta.jansikova@seznam.cz" className="font-body text-[14px] text-white/60 hover:text-violet transition-colors">
                   iveta.jansikova@seznam.cz
                 </a>
               </li>
