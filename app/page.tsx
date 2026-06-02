@@ -97,18 +97,16 @@ export default function HomePage() {
           </div>
         </div>
 
-        {/* Pravá strana — foto salónu */}
-        <div className="relative order-1 lg:order-2 flex items-center bg-cream lg:py-14 lg:pr-14">
-          <div className="relative w-full h-[55vw] lg:h-[62vh] p-3 bg-violet-light">
-            <div className="w-full h-full overflow-hidden">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src="/images/interier-3.jpeg"
-                alt="Interiér salónu Ivety Jansíkové"
-                className="w-full h-full object-cover"
-                style={{ filter: "brightness(1.08) contrast(1.06) saturate(1.12)", objectPosition: "center 40%" }}
-              />
-            </div>
+        {/* Pravá strana — foto salónu, plná výška */}
+        <div className="relative min-h-[85vw] lg:min-h-screen order-1 lg:order-2 bg-cream p-5 lg:p-8">
+          <div className="w-full h-full overflow-hidden bg-violet-light p-3">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/images/interier-3.jpeg"
+              alt="Interiér salónu Ivety Jansíkové"
+              className="w-full h-full object-cover"
+              style={{ filter: "brightness(1.08) contrast(1.06) saturate(1.12)", objectPosition: "center 30%" }}
+            />
           </div>
         </div>
       </section>
