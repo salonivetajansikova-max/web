@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 @theme {
-  --color-cream: #F7F3EE;
-  --color-white: #FDFCF9;
+  --color-cream: #F5F2FA;
+  --color-white: #FDFCFC;
   --color-violet: #8B7BA8;
   --color-violet-light: #E2DAF0;
   --color-sage: #A8B89A;
@@ -19,7 +19,7 @@ html {
 }
 
 body {
-  background-color: #F7F3EE;
+  background-color: #F5F2FA;
   color: #3D3147;
   -webkit-font-smoothing: antialiased;
 }
