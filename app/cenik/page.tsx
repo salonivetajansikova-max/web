@@ -1,6 +1,5 @@
 ﻿import type { Metadata } from "next";
 import Link from "next/link";
-import SectionLabel from "@/components/ui/SectionLabel";
 import PriceTable from "@/components/ui/PriceTable";
 import { pricing } from "@/data/pricing";
 
@@ -55,9 +54,7 @@ export default function CenikPage() {
           const section = pricing[tab.key];
           return (
             <div key={tab.key} id={tab.key} className="scroll-mt-32">
-              <div className="w-10 border-t border-violet mb-4" />
-              <SectionLabel text={section.label} />
-              <h2 className="font-body font-medium text-[clamp(22px,2.5vw,32px)] text-dark mb-8">
+              <h2 className="font-body font-medium text-[clamp(22px,2.5vw,32px)] text-dark mb-6 pb-4 border-b-2 border-violet">
                 {section.label}
               </h2>
               <PriceTable items={section.items} />
