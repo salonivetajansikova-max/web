@@ -4,7 +4,7 @@ export default function PriceTable({ items }: { items: PriceItem[] }) {
   return (
     <table className="w-full">
       <thead>
-        <tr className="bg-gray-light">
+        <tr className="bg-violet-light">
           <th className="text-left text-[11px] uppercase tracking-[0.1em] font-body font-medium text-gray py-3 px-4">
             Služba
           </th>
