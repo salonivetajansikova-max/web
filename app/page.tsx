@@ -68,20 +68,20 @@ export default function HomePage() {
       {/* HERO */}
       <section className="grid grid-cols-1 lg:grid-cols-2">
         {/* Levá strana — text */}
-        <div className="flex flex-col justify-center px-10 lg:px-16 xl:px-24 py-16 bg-cream order-2 lg:order-1">
+        <div className="flex flex-col justify-center px-10 lg:px-16 xl:px-24 py-8 bg-cream order-2 lg:order-1">
           <SectionLabel text="Světlá nad Sázavou" />
-          <h1 className="font-body font-medium text-[clamp(34px,3.5vw,54px)] leading-tight text-dark mb-6">
+          <h1 className="font-body font-medium text-[clamp(26px,2.8vw,40px)] leading-tight text-dark mb-3">
             Péče o krásu vašich rukou a nohou
           </h1>
-          <p className="font-body text-[16px] text-gray leading-[1.75] mb-10 max-w-md">
+          <p className="font-body text-[15px] text-gray leading-[1.7] mb-5 max-w-md">
             Profesionální pedikúra, manikúra, kosmetika a modeláž nehtů
             v příjemném soukromém salónu.
           </p>
-          <div className="flex flex-wrap gap-4 mb-12">
+          <div className="flex flex-wrap gap-3 mb-6">
             <Button href="/cenik" variant="solid">Zobrazit ceník</Button>
             <Button href="/sluzby" variant="outline">Naše služby</Button>
           </div>
-          <div className="flex flex-col gap-4 border-t border-border pt-8">
+          <div className="flex flex-col gap-2 border-t border-border pt-5">
             <a href="tel:736401118" className="flex items-center gap-3 font-body text-[14px] text-dark hover:text-violet transition-colors">
               <Phone size={15} strokeWidth={1.5} className="text-violet shrink-0" />
               736 401 118
