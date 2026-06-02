@@ -70,8 +70,8 @@ export default function HomePage() {
         <div className="absolute inset-0 z-0">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="https://images.unsplash.com/photo-1604654894610-df63bc536371?w=1400&q=80&auto=format"
-            alt="Hero"
+            src="https://images.unsplash.com/photo-1519415510236-718bdfcd89c8?w=1400&q=80&auto=format&fit=crop"
+            alt="Pedikúra — nohy ve vodě s květinami"
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-dark/40" />
