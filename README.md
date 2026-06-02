@@ -1,36 +1,88 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Iveta Jansíková — Web salónu
 
-## Getting Started
+Prezentační web pro soukromý kosmetický salón Ivety Jansíkové ve Světlé nad Sázavou.
 
-First, run the development server:
+## Technologie
+
+- **Next.js 16** (App Router)
+- **Tailwind CSS 4**
+- **TypeScript**
+- **Lucide React** (ikony)
+- **Google Fonts** — Cormorant Garamond (nadpisy) + DM Sans (text)
+
+## Spuštění lokálně
 
 ```bash
+cd iveta-jansikova
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Web běží na [http://localhost:3000](http://localhost:3000)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Struktura projektu
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+iveta-jansikova/
+├── app/
+│   ├── layout.tsx                  # Root layout (Navbar + Footer)
+│   ├── globals.css                 # Barvy, fonty
+│   ├── page.tsx                    # Homepage
+│   ├── sluzby/page.tsx             # Stránka služeb
+│   ├── cenik/page.tsx              # Ceník
+│   ├── o-mne/page.tsx              # O mně
+│   ├── kontakt/page.tsx            # Kontakt + mapa
+│   └── lektorska-draha/page.tsx   # Lektorská dráha (Royal Academy)
+├── components/
+│   ├── Navbar.tsx                  # Navigace (sticky, hamburger na mobilu)
+│   └── Footer.tsx                  # Patička
+└── public/
+    └── images/
+        └── iveta.jpg               # Portrét Ivety (O mně stránka)
+```
 
-## Learn More
+## Stránky
 
-To learn more about Next.js, take a look at the following resources:
+| Stránka | URL | Popis |
+|---------|-----|-------|
+| Úvod | `/` | Hero, benefity, přehled služeb, Royal Academy blok |
+| Služby | `/sluzby` | Detailní popis každé služby |
+| Ceník | `/cenik` | Kompletní ceník s anchor navigací |
+| O mně | `/o-mne` | Bio, certifikáty, produkty CHRISTINA a KART |
+| Kontakt | `/kontakt` | Adresa, telefon, email, Google Maps |
+| Lektorská dráha | `/lektorska-draha` | Kurzy na Royal Academy v Jihlavě |
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Barevná paleta
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+| Název | Hex | Použití |
+|-------|-----|---------|
+| Cream | `#FAF7F4` | Pozadí stránek |
+| Blush | `#E8D5C4` | Zvýrazněné sekce |
+| Rose | `#C4956A` | Tlačítka, akcenty |
+| Dark | `#1a1210` | Nadpisy, hlavní text |
+| Muted | `#5C4A42` | Popisné texty |
 
-## Deploy on Vercel
+## Kontakt salónu
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **Adresa:** Revoluční 49, 582 91 Světlá nad Sázavou
+- **Telefon:** 736 401 118
+- **Email:** iveta.jansikova@seznam.cz
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Nasazení (Vercel)
+
+1. Založ GitHub repozitář a pushni kód
+2. Na [vercel.com](https://vercel.com) propoj GitHub repo
+3. Vercel automaticky detekuje Next.js a nasadí web
+4. Přidej vlastní doménu v nastavení projektu
+
+## Co ještě doplnit před spuštěním
+
+- [ ] Vlastní hero fotka (zatím placeholder z Unsplash)
+- [ ] Fotky interiéru salónu
+- [ ] Otevírací doba (zjistit od Ivety)
+- [ ] Sociální sítě (pokud má)
+- [ ] Případně logo salónu
+
+## Podklady
+
+Původní podklady (ceníky, certifikáty, fotky) jsou ve složce `../podklady/`.
