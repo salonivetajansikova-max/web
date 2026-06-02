@@ -11,11 +11,10 @@ export const metadata: Metadata = {
 };
 
 const tabs = [
-  { key: "modelaz", label: "Modeláž nehtů" },
   { key: "pedikura", label: "Pedikúra" },
-  { key: "manikura", label: "Manikúra" },
   { key: "kosmetika", label: "Kosmetika" },
   { key: "depilace", label: "Depilace" },
+  { key: "manikura", label: "Manikúra & Modeláž" },
 ] as const;
 
 export default function CenikPage() {

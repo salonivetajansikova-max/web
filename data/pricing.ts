@@ -1,14 +1,4 @@
 export const pricing = {
-  modelaz: {
-    label: "Modeláž nehtů",
-    items: [
-      { name: "Gelové nehty nové", price: "780 Kč" },
-      { name: "Doplnění gelových nehtů", price: "620 Kč" },
-      { name: "Gel-lak", price: "480 Kč" },
-      { name: "Gel-lak doplnění", price: "460 Kč" },
-      { name: "Zdobení", price: "dle výběru" },
-    ],
-  },
   pedikura: {
     label: "Pedikúra",
     items: [
@@ -31,7 +21,7 @@ export const pricing = {
     ],
   },
   manikura: {
-    label: "Manikúra",
+    label: "Manikúra & Modeláž nehtů",
     items: [
       { name: "Manikúra", price: "380 Kč" },
       { name: "Odlakování", price: "80 Kč" },
@@ -39,6 +29,12 @@ export const pricing = {
       { name: "Zdobení", price: "dle výběru" },
       { name: "P-Shine", price: "380 Kč" },
       { name: "Parafínový zábal", price: "360 Kč" },
+      { name: "— Modeláž nehtů —", price: "" },
+      { name: "Gelové nehty nové", price: "780 Kč" },
+      { name: "Doplnění gelových nehtů", price: "620 Kč" },
+      { name: "Gel-lak", price: "480 Kč" },
+      { name: "Gel-lak doplnění", price: "460 Kč" },
+      { name: "Zdobení", price: "dle výběru" },
     ],
   },
   kosmetika: {
