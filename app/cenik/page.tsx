@@ -23,7 +23,6 @@ export default function CenikPage() {
       <section className="bg-cream py-20">
         <div className="max-w-7xl mx-auto px-6">
           <div className="w-10 border-t border-violet mb-4" />
-          <SectionLabel text="Přehled cen" />
           <h1 className="font-body font-medium text-[clamp(36px,4vw,54px)] text-dark">Ceník služeb</h1>
           <p className="font-body text-[15px] text-gray mt-3">
             Transparentní ceny bez skrytých poplatků
