@@ -1,4 +1,4 @@
-import Link from "next/link";
+﻿import Link from "next/link";
 import { Phone, Mail, MapPin } from "lucide-react";
 
 const navLinks = [
@@ -15,7 +15,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-6 py-16">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           <div>
-            <p className="font-heading text-[24px] text-white mb-2">
+            <p className="font-body font-medium text-[24px] text-white mb-2">
               Iveta Jansíková
             </p>
             <p className="font-body text-[14px] text-white/50 mb-4">
@@ -76,3 +76,4 @@ export default function Footer() {
     </footer>
   );
 }
+

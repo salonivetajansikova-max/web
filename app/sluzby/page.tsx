@@ -65,7 +65,7 @@ export default function SluzbyPage() {
         <div className="max-w-7xl mx-auto px-6">
           <div className="w-10 border-t border-violet mb-4" />
           <SectionLabel text="Přehled služeb" />
-          <h1 className="font-heading text-[clamp(36px,4vw,54px)] text-dark">Naše služby</h1>
+          <h1 className="font-body font-medium text-[clamp(36px,4vw,54px)] text-dark">Naše služby</h1>
           <p className="font-body text-[15px] text-gray mt-3">Komplexní péče o ruce, nohy a pleť</p>
         </div>
       </section>
@@ -138,4 +138,5 @@ export default function SluzbyPage() {
     </>
   );
 }
+
 

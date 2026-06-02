@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 import Link from "next/link";
 import { useState } from "react";
 import { usePathname } from "next/navigation";
@@ -35,7 +35,7 @@ export default function Navbar() {
         <Link href="/" className="flex items-center gap-3 leading-tight">
           <LavenderSprig />
           <div>
-            <span className="font-heading text-[20px] text-dark block">Iveta Jansíková</span>
+            <span className="font-body font-medium text-[20px] text-dark block">Iveta Jansíková</span>
             <span className="font-body text-[10px] uppercase tracking-[0.15em] text-violet">
               Pedikúra · Manikúra · Kosmetika
             </span>
@@ -88,3 +88,4 @@ export default function Navbar() {
     </header>
   );
 }
+

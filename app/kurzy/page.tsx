@@ -34,7 +34,7 @@ export default function KurzyPage() {
         <div className="max-w-7xl mx-auto px-6">
           <div className="w-10 border-t border-violet mb-4" />
           <SectionLabel text="Výuka & Vzdělávání" />
-          <h1 className="font-heading text-[clamp(36px,4vw,54px)] text-dark">Kurzy pedikúry</h1>
+          <h1 className="font-body font-medium text-[clamp(36px,4vw,54px)] text-dark">Kurzy pedikúry</h1>
           <p className="font-body text-[16px] text-gray mt-4 max-w-xl leading-[1.75]">
             Vedle své práce v salónu předávám více než dvacetiletou praxi dál jako lektorka
             akreditovaných kurzů na Royal Academy.
@@ -153,4 +153,5 @@ export default function KurzyPage() {
     </>
   );
 }
+
 

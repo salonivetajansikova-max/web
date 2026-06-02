@@ -79,7 +79,7 @@ export default function HomePage() {
 
         <div className="relative z-10 max-w-7xl mx-auto px-6 w-full text-center text-white">
           <SectionLabel text="Světlá nad Sázavou" white />
-          <h1 className="font-heading text-[clamp(42px,5vw,68px)] leading-tight mb-6 text-white">
+          <h1 className="font-body font-medium text-[clamp(42px,5vw,68px)] leading-tight mb-6 text-white">
             Péče o krásu vašich rukou a nohou
           </h1>
           <p className="font-body text-[16px] text-white/85 max-w-xl mx-auto mb-10 leading-relaxed">
@@ -202,4 +202,5 @@ export default function HomePage() {
     </>
   );
 }
+
 

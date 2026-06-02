@@ -6,8 +6,8 @@
   --color-violet: #8B7BA8;
   --color-violet-light: #E2DAF0;
   --color-sage: #A8B89A;
-  --color-dark: #3D3147;
-  --color-gray: #8B7FA0;
+  --color-dark: #111111;
+  --color-gray: #444444;
   --color-gray-light: #EDE8F4;
   --color-border: #D4C9E4;
   --font-heading: var(--font-cormorant), serif;
@@ -20,13 +20,13 @@ html {
 
 body {
   background-color: #F5F2FA;
-  color: #3D3147;
+  color: #111111;
   -webkit-font-smoothing: antialiased;
 }
 
 @layer base {
   h1, h2, h3, h4 {
-    color: #3D3147;
+    color: #111111;
   }
 
   p, li, span {

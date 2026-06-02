@@ -16,7 +16,7 @@ export default function KontaktPage() {
         <div className="max-w-7xl mx-auto px-6">
           <div className="w-10 border-t border-violet mb-4" />
           <SectionLabel text="Kde nás najdete" />
-          <h1 className="font-heading text-[clamp(36px,4vw,54px)] text-dark">Kontakt</h1>
+          <h1 className="font-body font-medium text-[clamp(36px,4vw,54px)] text-dark">Kontakt</h1>
         </div>
       </section>
 
@@ -105,4 +105,5 @@ export default function KontaktPage() {
     </>
   );
 }
+
 

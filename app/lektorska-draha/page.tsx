@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Link from "next/link";
 import { ExternalLink, Award, Calendar, Clock, BookOpen } from "lucide-react";
 
@@ -31,7 +31,7 @@ export default function LektorskaPage() {
       <section className="bg-cream py-20 border-b border-blush">
         <div className="max-w-6xl mx-auto px-6">
           <p className="text-xs uppercase tracking-widest text-muted mb-3">Vzdělávám budoucí odborníky</p>
-          <h1 className="font-heading text-5xl text-salon">Lektorská dráha</h1>
+          <h1 className="font-body font-medium text-5xl text-salon">Lektorská dráha</h1>
           <p className="text-muted mt-4 max-w-xl leading-relaxed">
             Vedle své práce v salónu předávám více než dvacetiletou praxi dál jako lektorka
             akreditovaných kurzů na Royal Academy.
@@ -44,7 +44,7 @@ export default function LektorskaPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
             <div>
               <p className="text-xs uppercase tracking-widest text-muted mb-3">Royal Academy</p>
-              <h2 className="font-heading text-4xl text-salon mb-6">
+              <h2 className="font-body font-medium text-4xl text-salon mb-6">
                 Rekvalifikační kurz: Pedikérka a nehtová designérka
               </h2>
               <p className="text-muted leading-relaxed mb-5">
@@ -102,12 +102,12 @@ export default function LektorskaPage() {
         <div className="max-w-6xl mx-auto px-6">
           <div className="mb-12">
             <p className="text-xs uppercase tracking-widest text-muted mb-3">Specializace</p>
-            <h2 className="font-heading text-4xl text-salon">Doplňkové kurzy</h2>
+            <h2 className="font-body font-medium text-4xl text-salon">Doplňkové kurzy</h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {additionalCourses.map((c) => (
               <div key={c.title} className="bg-white p-8 rounded-sm">
-                <h3 className="font-heading text-xl text-salon mb-3">{c.title}</h3>
+                <h3 className="font-body font-medium text-xl text-salon mb-3">{c.title}</h3>
                 <p className="text-muted text-sm leading-relaxed mb-6">{c.desc}</p>
                 <p className="text-rose">{c.price}</p>
               </div>
@@ -129,7 +129,7 @@ export default function LektorskaPage() {
       <section className="bg-blush py-20">
         <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           <div>
-            <h2 className="font-heading text-4xl text-salon mb-4">Zajímá vás kurz?</h2>
+            <h2 className="font-body font-medium text-4xl text-salon mb-4">Zajímá vás kurz?</h2>
             <p className="text-muted leading-relaxed">
               Pro více informací nebo přihlášení navštivte stránky Royal Academy, nebo mě
               kontaktujte přímo.
@@ -156,3 +156,4 @@ export default function LektorskaPage() {
     </>
   );
 }
+
