@@ -66,45 +66,45 @@ export default function HomePage() {
   return (
     <>
       {/* HERO */}
-      <section className="grid grid-cols-1 lg:grid-cols-2">
-        {/* Levá strana — text */}
-        <div className="flex flex-col justify-center px-10 lg:px-16 xl:px-24 py-8 bg-cream order-2 lg:order-1">
-          <SectionLabel text="Světlá nad Sázavou" />
-          <h1 className="font-body font-medium text-[clamp(26px,2.8vw,40px)] leading-tight text-dark mb-3">
-            Péče o krásu vašich rukou a nohou
-          </h1>
-          <p className="font-body text-[15px] text-gray leading-[1.7] mb-5 max-w-md">
-            Profesionální pedikúra, manikúra, kosmetika a modeláž nehtů
-            v příjemném soukromém salónu.
-          </p>
-          <div className="flex flex-wrap gap-3 mb-6">
-            <Button href="/cenik" variant="solid">Zobrazit ceník</Button>
-            <Button href="/sluzby" variant="outline">Naše služby</Button>
-          </div>
-          <div className="flex flex-col gap-2 border-t border-border pt-5">
-            <a href="tel:736401118" className="flex items-center gap-3 font-body text-[14px] text-dark hover:text-violet transition-colors">
-              <Phone size={15} strokeWidth={1.5} className="text-violet shrink-0" />
-              736 401 118
-            </a>
-            <a href="mailto:iveta.jansikova@seznam.cz" className="flex items-center gap-3 font-body text-[14px] text-dark hover:text-violet transition-colors">
-              <Mail size={15} strokeWidth={1.5} className="text-violet shrink-0" />
-              iveta.jansikova@seznam.cz
-            </a>
-            <div className="flex items-center gap-3 font-body text-[14px] text-dark">
-              <MapPin size={15} strokeWidth={1.5} className="text-violet shrink-0" />
-              Revoluční 49, Světlá nad Sázavou
+      <section className="py-10 lg:py-14">
+        <div className="max-w-7xl mx-auto px-6 flex flex-col lg:flex-row items-center gap-10 lg:gap-14">
+          {/* Levá strana — text */}
+          <div className="w-full lg:flex-1 bg-cream px-10 lg:px-14 py-10 lg:py-12 order-2 lg:order-1">
+            <SectionLabel text="Světlá nad Sázavou" />
+            <h1 className="font-body font-medium text-[clamp(26px,2.8vw,40px)] leading-tight text-dark mb-3">
+              Péče o krásu vašich rukou a nohou
+            </h1>
+            <p className="font-body text-[15px] text-gray leading-[1.7] mb-5 max-w-md">
+              Profesionální pedikúra, manikúra, kosmetika a modeláž nehtů
+              v příjemném soukromém salónu.
+            </p>
+            <div className="flex flex-wrap gap-3 mb-6">
+              <Button href="/cenik" variant="solid">Zobrazit ceník</Button>
+              <Button href="/sluzby" variant="outline">Naše služby</Button>
+            </div>
+            <div className="flex flex-col gap-2 border-t border-border pt-5">
+              <a href="tel:736401118" className="flex items-center gap-3 font-body text-[14px] text-dark hover:text-violet transition-colors">
+                <Phone size={15} strokeWidth={1.5} className="text-violet shrink-0" />
+                736 401 118
+              </a>
+              <a href="mailto:iveta.jansikova@seznam.cz" className="flex items-center gap-3 font-body text-[14px] text-dark hover:text-violet transition-colors">
+                <Mail size={15} strokeWidth={1.5} className="text-violet shrink-0" />
+                iveta.jansikova@seznam.cz
+              </a>
+              <div className="flex items-center gap-3 font-body text-[14px] text-dark">
+                <MapPin size={15} strokeWidth={1.5} className="text-violet shrink-0" />
+                Revoluční 49, Světlá nad Sázavou
+              </div>
             </div>
           </div>
-        </div>
 
-        {/* Pravá strana — foto salónu, výška daná levým sloupcem */}
-        <div className="order-1 lg:order-2 bg-cream p-5 lg:p-8">
-          <div className="w-full h-[80vw] lg:h-full overflow-hidden bg-violet-light p-3">
+          {/* Pravá strana — foto salónu */}
+          <div className="w-full lg:w-72 xl:w-80 shrink-0 p-3 bg-violet-light order-1 lg:order-2">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src="/images/interier-3.jpeg"
               alt="Interiér salónu Ivety Jansíkové"
-              className="w-full h-full object-cover"
+              className="w-full h-[60vw] lg:h-[420px] object-cover"
               style={{ filter: "brightness(1.08) contrast(1.06) saturate(1.12)", objectPosition: "center 30%" }}
             />
           </div>
