@@ -66,9 +66,9 @@ export default function HomePage() {
   return (
     <>
       {/* HERO */}
-      <section className="min-h-screen grid grid-cols-1 lg:grid-cols-2">
+      <section className="grid grid-cols-1 lg:grid-cols-2 lg:h-[60vh]">
         {/* Levá strana — text */}
-        <div className="flex flex-col justify-center px-10 lg:px-16 xl:px-24 py-20 lg:py-0 bg-cream order-2 lg:order-1">
+        <div className="flex flex-col justify-center px-10 lg:px-16 xl:px-24 py-16 lg:py-0 bg-cream order-2 lg:order-1">
           <SectionLabel text="Světlá nad Sázavou" />
           <h1 className="font-body font-medium text-[clamp(34px,3.5vw,54px)] leading-tight text-dark mb-6">
             Péče o krásu vašich rukou a nohou
@@ -97,8 +97,8 @@ export default function HomePage() {
           </div>
         </div>
 
-        {/* Pravá strana — foto salónu, plná výška */}
-        <div className="relative min-h-[85vw] lg:min-h-screen order-1 lg:order-2 bg-cream p-5 lg:p-8">
+        {/* Pravá strana — foto salónu */}
+        <div className="relative min-h-[70vw] lg:h-full order-1 lg:order-2 bg-cream p-5 lg:p-8">
           <div className="w-full h-full overflow-hidden bg-violet-light p-3">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
